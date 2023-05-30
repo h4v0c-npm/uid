@@ -11,7 +11,7 @@ export const uid = (length: number = 16): UID => {
         _src_string = _rng.shuffle(_src_string) as string;
     }
 
-    const uuid: Array<string> = [];
+    const uuid: string[] = [];
 
     while (uuid.length < length) uuid.push(_rng.choose(_src_string));
 
